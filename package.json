@@ -14,6 +14,7 @@
   ],
   "scripts": {
     "build": "medusa build",
+    "deploy": "npm run build && npm start",
     "seed": "medusa exec ./src/scripts/seed.ts",
     "start": "medusa start",
     "dev": "medusa develop",
@@ -52,6 +53,7 @@
     "yalc": "^1.0.0-pre.53"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=20",
+    "npm": ">=8"
   }
 }
